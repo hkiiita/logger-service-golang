@@ -1,8 +1,8 @@
 package main
 
 import (
-	"DELETUM/logger"
 	"time"
+	"github.com/hkiiita/logger-service-golang/logger"
 )
 
 func main() {
