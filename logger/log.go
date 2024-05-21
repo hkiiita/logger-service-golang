@@ -3,6 +3,7 @@ package logger
 import (
 	"fmt"
 	"os"
+	"time"
 )
 
 type Logger struct {
@@ -40,8 +41,10 @@ func init() {
 }
 
 func (logService *Logger)Log(message string){
-
-	logService.InputChan <- message
+	
+	date := time.Now()
+	message = date.Format("2006-01-02T15:04:05Z07:00") + " " + message + "\n"
+	logService.InputChan <- message	
 	
 }
 
