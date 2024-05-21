@@ -39,6 +39,12 @@ func init() {
 	}(logService)
 }
 
+func (logService *Logger)Log(message string){
+
+	logService.InputChan <- message
+	
+}
+
 func GetLogger() *Logger {
 	if logService != nil {
 		return logService

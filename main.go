@@ -8,7 +8,10 @@ import (
 func main() {
 	//simple logger service
 	log := logger.GetLogger()
-	log.InputChan <- "Message 1"
-	time.Sleep(5 * time.Second)
-	log.InputChan <- "Message 2"
+
+	log.Log("Message 11")
+	time.Sleep(2*time.Second)
+	log.Log("Message 22")
+	time.Sleep(2*time.Second)
+
 }
