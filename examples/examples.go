@@ -27,5 +27,5 @@ func main() {
 	// Critical error
 	log.Log("[ERROR]: A critical error has occurred, application stopped ")
 	// End program
-	log.Log("[ERROR]: Arrêt de l'application")
+	log.Log("[ERROR]: Application stopped")
 }
